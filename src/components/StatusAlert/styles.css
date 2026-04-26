@@ -1,0 +1,136 @@
+.status-alert {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: start;
+  gap: 0.8rem;
+  width: 100%;
+  padding: 0.95rem 1rem;
+  border: 1px solid transparent;
+  border-radius: 0.9rem;
+  font-family: var(--sans);
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.05);
+  --status-alert-offset: 16px;
+}
+
+.status-alert--position-absolute,
+.status-alert--position-fixed {
+  z-index: 1000;
+  width: min(420px, calc(100vw - (var(--status-alert-offset) * 2)));
+}
+
+.status-alert--position-absolute {
+  position: absolute;
+}
+
+.status-alert--position-fixed {
+  position: fixed;
+}
+
+.status-alert--placement-top-left {
+  top: var(--status-alert-offset);
+  left: var(--status-alert-offset);
+}
+
+.status-alert--placement-top-center {
+  top: var(--status-alert-offset);
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.status-alert--placement-top-right {
+  top: var(--status-alert-offset);
+  right: var(--status-alert-offset);
+}
+
+.status-alert--placement-bottom-left {
+  bottom: var(--status-alert-offset);
+  left: var(--status-alert-offset);
+}
+
+.status-alert--placement-bottom-center {
+  bottom: var(--status-alert-offset);
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.status-alert--placement-bottom-right {
+  bottom: var(--status-alert-offset);
+  right: var(--status-alert-offset);
+}
+
+.status-alert--success {
+  background: #f0fdf4;
+  border-color: #bbf7d0;
+  color: #166534;
+}
+
+.status-alert--error {
+  background: #fef2f2;
+  border-color: #fecaca;
+  color: #b91c1c;
+}
+
+.status-alert--warning {
+  background: #fffbeb;
+  border-color: #fde68a;
+  color: #b45309;
+}
+
+.status-alert--info {
+  background: #eff6ff;
+  border-color: #bfdbfe;
+  color: #1d4ed8;
+}
+
+.status-alert__icon {
+  display: inline-flex;
+  width: 1.2rem;
+  height: 1.2rem;
+  flex-shrink: 0;
+  margin-top: 0.1rem;
+}
+
+.status-alert__icon svg,
+.status-alert__close svg {
+  width: 100%;
+  height: 100%;
+}
+
+.status-alert__content {
+  min-width: 0;
+}
+
+.status-alert__title {
+  font-size: 0.95rem;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.status-alert__message {
+  font-size: 0.92rem;
+  line-height: 1.45;
+}
+
+.status-alert__close {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  padding: 0;
+  border: 0;
+  border-radius: 9999px;
+  background: transparent;
+  color: currentColor;
+  cursor: pointer;
+  transition: background-color 160ms ease;
+}
+
+.status-alert__close:hover {
+  background: rgba(15, 23, 42, 0.08);
+}
+
+.status-alert__close:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(15, 118, 110, 0.16);
+}

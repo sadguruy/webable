@@ -1,0 +1,34 @@
+.webable-spacing {
+  --webable-space-unit: 0.25rem;
+  --webable-space-mobile-scale: 0.5;
+}
+
+.webable-spacing--padding {
+  padding-top: calc(var(--webable-space-top) * var(--webable-space-unit));
+  padding-right: calc(var(--webable-space-right) * var(--webable-space-unit));
+  padding-bottom: calc(var(--webable-space-bottom) * var(--webable-space-unit));
+  padding-left: calc(var(--webable-space-left) * var(--webable-space-unit));
+}
+
+.webable-spacing--margin {
+  margin-top: calc(var(--webable-space-top) * var(--webable-space-unit));
+  margin-right: calc(var(--webable-space-right) * var(--webable-space-unit));
+  margin-bottom: calc(var(--webable-space-bottom) * var(--webable-space-unit));
+  margin-left: calc(var(--webable-space-left) * var(--webable-space-unit));
+}
+
+@media (max-width: 767px) {
+  .webable-spacing--padding {
+    padding-top: calc(var(--webable-space-top) * var(--webable-space-unit) * var(--webable-space-mobile-scale));
+    padding-right: calc(var(--webable-space-right) * var(--webable-space-unit) * var(--webable-space-mobile-scale));
+    padding-bottom: calc(var(--webable-space-bottom) * var(--webable-space-unit) * var(--webable-space-mobile-scale));
+    padding-left: calc(var(--webable-space-left) * var(--webable-space-unit) * var(--webable-space-mobile-scale));
+  }
+
+  .webable-spacing--margin {
+    margin-top: calc(var(--webable-space-top) * var(--webable-space-unit) * var(--webable-space-mobile-scale));
+    margin-right: calc(var(--webable-space-right) * var(--webable-space-unit) * var(--webable-space-mobile-scale));
+    margin-bottom: calc(var(--webable-space-bottom) * var(--webable-space-unit) * var(--webable-space-mobile-scale));
+    margin-left: calc(var(--webable-space-left) * var(--webable-space-unit) * var(--webable-space-mobile-scale));
+  }
+}

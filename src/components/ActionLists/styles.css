@@ -1,0 +1,132 @@
+.action-lists {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  width: 100%;
+  min-height: 72px;
+  padding: 0.95rem 1rem;
+  border: 1px solid #dbe7ee;
+  border-radius: 0.9rem;
+  background: #ffffff;
+  color: #14213d;
+  text-align: left;
+  text-decoration: none;
+  cursor: pointer;
+  transition:
+    border-color 160ms ease,
+    background-color 160ms ease,
+    box-shadow 160ms ease,
+    transform 160ms ease;
+}
+
+.action-lists-group {
+  width: 100%;
+}
+
+.action-lists-group--comfortable {
+  overflow: hidden;
+  border: 1px solid #dbe7ee;
+  border-radius: 1rem;
+  background: #ffffff;
+}
+
+.action-lists-group--normal {
+  display: grid;
+}
+
+.action-lists:hover:not(:disabled):not([aria-disabled="true"]) {
+  border-color: #c2d3df;
+  background: #f8fbfc;
+  transform: translateY(-1px);
+}
+
+.action-lists:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(15, 118, 110, 0.16);
+}
+
+.action-lists--disabled,
+.action-lists:disabled,
+.action-lists[aria-disabled="true"] {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.action-lists--comfortable {
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.action-lists-group--comfortable .action-lists + .action-lists {
+  border-top: 1px solid #edf2f7;
+}
+
+.action-lists--normal {
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  border-bottom: 1px solid #dbe7ee;
+}
+
+.action-lists-group--normal .action-lists:last-child {
+  border-bottom: 0;
+}
+
+.action-lists__left {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  min-width: 0;
+}
+
+.action-lists__icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  flex-shrink: 0;
+  border-radius: 0.75rem;
+  background: #f0fdfa;
+  color: #0f766e;
+}
+
+.action-lists__icon svg,
+.action-lists__icon-image,
+.action-lists__sprite,
+.action-lists__right svg {
+  width: 1.2rem;
+  height: 1.2rem;
+}
+
+.action-lists__icon-image {
+  object-fit: contain;
+}
+
+.action-lists__text {
+  display: grid;
+  gap: 0.2rem;
+  min-width: 0;
+}
+
+.action-lists__title {
+  font-size: 0.98rem;
+  font-weight: 650;
+  line-height: 1.35;
+}
+
+.action-lists__helper {
+  color: #52607a;
+  font-size: 0.86rem;
+  line-height: 1.4;
+}
+
+.action-lists__right {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #7c869b;
+  flex-shrink: 0;
+}

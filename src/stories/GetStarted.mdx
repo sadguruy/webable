@@ -1,0 +1,123 @@
+import { Meta } from "@storybook/addon-docs/blocks";
+
+<Meta title="Welcome/Get Started" />
+
+# Get Started
+
+Webable is a lightweight React UI component library designed for reuse across
+React-based projects. This page explains where to use it, how to install it,
+and how to start importing components.
+
+## Where to use Webable
+
+Use Webable in:
+
+- React applications
+- Vite-based React projects
+- Internal dashboards
+- Product frontends
+- Shared design system packages
+
+It is a good fit when you want a small reusable UI layer for buttons, inputs,
+tabs, and other common interface components.
+
+## Installation
+
+Install the package in any React project where you want to reuse the
+components.
+
+```bash
+npm install @webable/ui
+```
+
+If you use Yarn:
+
+```bash
+yarn add @webable/ui
+```
+
+If you use pnpm:
+
+```bash
+pnpm add @webable/ui
+```
+
+## Peer requirements
+
+Make sure the target project already includes:
+
+- `react`
+- `react-dom`
+
+Webable is meant to be consumed inside an existing React application rather
+than as a standalone app.
+
+## Basic usage
+
+Import the component you want and use it in your React UI.
+
+```tsx
+import { ActionButton } from "@webable/ui";
+
+export function Example() {
+  return (
+    <ActionButton
+      label="Save changes"
+      variant="primary"
+      size="medium"
+    />
+  );
+}
+```
+
+## Example with icon and full width
+
+```tsx
+import { ActionButton } from "@webable/ui";
+
+function ArrowIcon() {
+  return (
+    <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeWidth="2">
+      <path d="M4 10h10" strokeLinecap="round" />
+      <path d="m10 5 5 5-5 5" strokeLinecap="round" strokeLinejoin="round" />
+    </svg>
+  );
+}
+
+export function SubmitSection() {
+  return (
+    <ActionButton
+      label="Continue"
+      variant="primary"
+      width="full"
+      icon={<ArrowIcon />}
+      iconPosition="right"
+    />
+  );
+}
+```
+
+## Available now
+
+Current reusable component:
+
+- `ActionButton`
+
+Planned reusable components:
+
+- `Input`
+- `Tabs`
+- `Table`
+- More shared primitives over time
+
+## Development in this repository
+
+To work on the library locally:
+
+```bash
+npm install
+npm run storybook
+```
+
+Storybook is the main place to review components, test variants, and document
+new additions before they are consumed in other projects.

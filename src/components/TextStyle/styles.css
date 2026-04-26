@@ -1,0 +1,160 @@
+.text-style {
+  margin: 0;
+  color: #14213d;
+  font-family: var(--sans);
+  line-height: 1.5;
+}
+
+.text-style--tone-default {
+  color: #14213d;
+}
+
+.text-style--muted {
+  color: #52607a;
+}
+
+.text-style--tone-muted {
+  color: #52607a;
+}
+
+.text-style--tone-success {
+  color: #15803d;
+}
+
+.text-style--tone-warning {
+  color: #b45309;
+}
+
+.text-style--tone-danger {
+  color: #b91c1c;
+}
+
+.text-style--tone-info {
+  color: #1d4ed8;
+}
+
+.text-style--align-left {
+  text-align: left;
+}
+
+.text-style--align-center {
+  text-align: center;
+}
+
+.text-style--align-right {
+  text-align: right;
+}
+
+.text-style--weight-regular {
+  font-weight: 400;
+}
+
+.text-style--weight-medium {
+  font-weight: 500;
+}
+
+.text-style--weight-semibold {
+  font-weight: 600;
+}
+
+.text-style--weight-bold {
+  font-weight: 700;
+}
+
+.text-style--truncate {
+  display: inline-block;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.text-style--h1 {
+  font-size: 3rem;
+  line-height: 1.1;
+  font-weight: 800;
+}
+
+.text-style--h2 {
+  font-size: 2.5rem;
+  line-height: 1.15;
+  font-weight: 760;
+}
+
+.text-style--h3,
+.text-style--heading {
+  font-size: 2rem;
+  line-height: 1.2;
+  font-weight: 720;
+}
+
+.text-style--h4 {
+  font-size: 1.5rem;
+  line-height: 1.25;
+  font-weight: 680;
+}
+
+.text-style--h5 {
+  font-size: 1.25rem;
+  line-height: 1.3;
+  font-weight: 650;
+}
+
+.text-style--h6 {
+  font-size: 1rem;
+  line-height: 1.35;
+  font-weight: 640;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.text-style--base {
+  font-size: 1rem;
+}
+
+.text-style--fineprint {
+  font-size: 0.8rem;
+  line-height: 1.45;
+}
+
+.text-style--label {
+  font-size: 0.875rem;
+  line-height: 1.3;
+  font-weight: 650;
+}
+
+.text-style--tagline {
+  font-size: 0.875rem;
+  line-height: 1.4;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #0f766e;
+}
+
+.text-style--crossed {
+  font-size: 0.95rem;
+  text-decoration: line-through;
+  text-decoration-thickness: 1.5px;
+  color: #7c869b;
+}
+
+.text-style--sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.text-style:is(ul, ol) {
+  padding-left: 1.25rem;
+}
+
+.text-style:is(ul, ol) li {
+  margin: 0.3rem 0;
+}
