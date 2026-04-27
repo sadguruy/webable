@@ -3,7 +3,7 @@ export {
   type ActionButtonProps,
   type ActionButtonSize,
   type ActionButtonVariant,
-  type ActionButtonWidth,
+  type ActionButtonWidth
 } from "./components/ActionButton";
 export {
   ActionLists,
@@ -13,56 +13,58 @@ export {
   type ActionListsGroupProps,
   type ActionListsLinkProps,
   type ActionListsProps,
-  type ActionListsVariant,
+  type ActionListsVariant
 } from "./components/ActionLists";
 export {
-  TextStyle,
-  type TextStyleProps,
-  type TextStyleVariant,
-} from "./components/TextStyle";
-export { TextField, type TextFieldProps } from "./components/TextField";
-export {
-  SelectFiled,
-  type SelectFiledOption,
-  type SelectFiledProps,
-} from "./components/SelectFiled";
-export { ImageUpload, type ImageUploadProps } from "./components/ImageUpload";
-export {
-  Header,
-  type HeaderNavChildItem,
-  type HeaderNavItem,
-  type HeaderProps,
-} from "./components/Header";
+  Divider,
+  type DividerOrientation,
+  type DividerProps,
+  type DividerTone
+} from "./components/Divider";
 export {
   Column,
   Grid,
   type ColumnProps,
   type GridContainer,
   type GridGap,
-  type GridProps,
+  type GridProps
 } from "./components/Grid";
 export {
-  Divider,
-  type DividerOrientation,
-  type DividerProps,
-  type DividerTone,
-} from "./components/Divider";
+  Header,
+  type HeaderNavChildItem,
+  type HeaderNavItem,
+  type HeaderProps
+} from "./components/Header";
+export { Icon, type IconProps } from "./components/Icon";
+export { ImageUpload, type ImageUploadProps } from "./components/ImageUpload";
+export {
+  SelectFiled,
+  type SelectFiledOption,
+  type SelectFiledProps
+} from "./components/SelectFiled";
 export {
   Spacing,
   type SpacingAs,
   type SpacingMode,
   type SpacingProps,
-  type SpacingStep,
+  type SpacingStep
 } from "./components/Spacing";
 export {
+  StatusAlert,
   type StatusAlertPlacement,
   type StatusAlertPositionMode,
-  StatusAlert,
   type StatusAlertProps,
-  type StatusAlertTone,
+  type StatusAlertTone
 } from "./components/StatusAlert";
 export {
   TextareaBlock,
   type TextareaBlockMode,
-  type TextareaBlockProps,
+  type TextareaBlockProps
 } from "./components/TextareaBlock";
+export { TextField, type TextFieldProps } from "./components/TextField";
+export {
+  TextStyle,
+  type TextStyleProps,
+  type TextStyleVariant
+} from "./components/TextStyle";
+
