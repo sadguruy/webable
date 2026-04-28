@@ -12,6 +12,10 @@
 	"files": [
 		"dist"
 	],
+	"peerDependencies": {
+		"react": "^19.2.5",
+		"react-dom": "^19.2.5"
+	},
 	"scripts": {
 		"dev": "vite",
 		"build": "tsc -b && vite build",
@@ -30,9 +34,7 @@
 		"@tiptap/extension-table-header": "^3.22.4",
 		"@tiptap/extension-table-row": "^3.22.4",
 		"@tiptap/react": "^3.22.4",
-		"@tiptap/starter-kit": "^3.22.4",
-		"react": "^19.2.5",
-		"react-dom": "^19.2.5"
+		"@tiptap/starter-kit": "^3.22.4"
 	},
 	"devDependencies": {
 		"@chromatic-com/storybook": "^5.1.2",
