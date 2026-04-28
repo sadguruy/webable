@@ -9,13 +9,13 @@
 	"main": "dist/index.cjs.js",
 	"module": "dist/index.es.js",
 	"types": "dist/index.d.ts",
+	"peerDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
 	"files": [
 		"dist"
 	],
-	"peerDependencies": {
-		"react": "^19.2.5",
-		"react-dom": "^19.2.5"
-	},
 	"scripts": {
 		"dev": "vite",
 		"build": "tsc -b && vite build",
