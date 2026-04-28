@@ -7,12 +7,12 @@ export default {
 	input: "src/index.ts", // or index.ts if using TS
 	output: [
 		{
-			file: "dist/index.ts",
+			file: "dist/index.js",
 			format: "cjs",
 			exports: "named",
 		},
 		{
-			file: "dist/index.esm.ts",
+			file: "dist/index.esm.js",
 			format: "esm",
 		},
 	],
