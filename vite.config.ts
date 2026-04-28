@@ -5,19 +5,28 @@ import { playwright } from "@vitest/browser-playwright";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { defineConfig } from "vite";
+import dts from "vite-plugin-dts";
+
 const dirname =
 	typeof __dirname !== "undefined"
 		? __dirname
 		: path.dirname(fileURLToPath(import.meta.url));
 
 export default defineConfig({
-	plugins: [react()],
+	plugins: [
+		react(),
+		dts({
+			entryRoot: "src",
+			outDir: "dist",
+			insertTypesEntry: true,
+		}),
+	],
 	build: {
 		lib: {
 			entry: "src/index.ts",
 			name: "WebableUI",
-			fileName: "index",
-			formats: ["es"],
+			fileName: (format: string) => `index.${format}.js`,
+			formats: ["es", "cjs"],
 		},
 		rollupOptions: {
 			external: ["react", "react-dom", "react/jsx-runtime"],

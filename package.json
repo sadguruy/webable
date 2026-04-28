@@ -6,6 +6,7 @@
 	"publishConfig": {
 		"access": "public"
 	},
+	"main": "dist/index.cjs.js",
 	"module": "dist/index.js",
 	"types": "dist/index.d.ts",
 	"peerDependencies": {
@@ -60,6 +61,7 @@
 		"typescript": "~6.0.2",
 		"typescript-eslint": "^8.58.2",
 		"vite": "^8.0.10",
+		"vite-plugin-dts": "^4.5.4",
 		"vitest": "^4.1.5"
 	}
 }
