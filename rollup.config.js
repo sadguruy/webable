@@ -4,7 +4,7 @@ import resolve from "@rollup/plugin-node-resolve";
 import peerDepsExternal from "rollup-plugin-peer-deps-external";
 
 export default {
-	input: "src/index.js",
+	input: "src/index.js", // or index.ts if using TS
 	output: [
 		{
 			file: "dist/index.js",
