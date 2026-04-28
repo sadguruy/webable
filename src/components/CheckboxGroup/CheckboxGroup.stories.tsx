@@ -83,7 +83,7 @@ export const MultipleCompact: GroupStory = {
 
 /* --------- Single checkbox stories (using <Checkbox />) --------- */
 
-type SingleMeta = Meta<typeof Checkbox>;
+// type SingleMeta = Meta<typeof Checkbox>;
 type SingleStory = StoryObj<typeof Checkbox>;
 
 export const SingleCheckboxComfortable: SingleStory = {
