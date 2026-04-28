@@ -16,8 +16,8 @@ export default defineConfig({
 		lib: {
 			entry: "src/index.ts",
 			name: "WebableUI",
-			fileName: (format) => `index.${format}.js`,
-			formats: ["es","cjs"],
+			fileName: "index",
+			formats: ["es"],
 		},
 		rollupOptions: {
 			external: ["react", "react-dom", "react/jsx-runtime"],
