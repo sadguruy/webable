@@ -1,11 +1,11 @@
 import {
-  useId,
-  type ChangeEvent,
-  type ReactNode,
-  type SelectHTMLAttributes,
+	useId,
+	type ChangeEvent,
+	type ReactNode,
+	type SelectHTMLAttributes,
 } from "react";
 
-import "../TextStyles/styles.css";
+import "../TextField/styles.css";
 import "./styles.css";
 
 export interface SelectFiledOption {

@@ -20,6 +20,8 @@
   display: inline-block;
   color: #14213d;
   padding: 0;
+  font-family: var(--sans);
+  font-weight: 600;
 }
 
 .radio-group__required {

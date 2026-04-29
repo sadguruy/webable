@@ -120,7 +120,8 @@
 .text-style--label {
   font-size: 1.25rem;
   line-height: 1.3;
-  font-weight: 650;
+  font-family: var(--sans);
+  font-weight: 600;
 }
 
 .text-style--tagline {

@@ -17,6 +17,8 @@
 .image-upload__label {
   display: inline-block;
   color: #14213d;
+  font-family: var(--sans);
+  font-weight: 600;
 }
 
 .image-upload__required {
