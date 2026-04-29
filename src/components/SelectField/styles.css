@@ -1,33 +1,33 @@
-.select-filed {
+.select-field {
   display: grid;
   gap: 0.45rem;
   width: 100%;
 }
 
-.select-filed--full {
+.select-field--full {
   width: 100%;
 }
 
-.select-filed__header {
+.select-field__header {
   display: grid;
   gap: 0.2rem;
   margin-bottom: 0.5rem;
 }
 
-.select-filed__label {
+.select-field__label {
   display: inline-block;
   color: #14213d;
 }
 
-.select-filed__required {
+.select-field__required {
   color: #b91c1c;
 }
 
-.select-filed__control {
+.select-field__control {
   position: relative;
 }
 
-.select-filed__select {
+.select-field__select {
   width: 100%;
   height: 52px;
   padding: 0 2.75rem 0 0.9rem;
@@ -44,33 +44,33 @@
     background-color 160ms ease;
 }
 
-.select-filed__select:hover:enabled {
+.select-field__select:hover:enabled {
   border-color: #94a3b8;
 }
 
-.select-filed__select:focus-visible {
+.select-field__select:focus-visible {
   outline: none;
   border-color: #0f766e;
   box-shadow: 0 0 0 4px rgba(15, 118, 110, 0.18);
 }
 
-.select-filed--invalid .select-filed__select {
+.select-field--invalid .select-field__select {
   border-color: #dc2626;
   background: #fff8f8;
 }
 
-.select-filed--invalid .select-filed__select:focus-visible {
+.select-field--invalid .select-field__select:focus-visible {
   border-color: #dc2626;
   box-shadow: 0 0 0 4px rgba(220, 38, 38, 0.16);
 }
 
-.select-filed--disabled .select-filed__select {
+.select-field--disabled .select-field__select {
   cursor: not-allowed;
   background: #f8fafc;
   color: #64748b;
 }
 
-.select-filed__chevron {
+.select-field__chevron {
   position: absolute;
   top: 50%;
   right: 0.9rem;
@@ -81,23 +81,23 @@
   color: #52607a;
 }
 
-.select-filed__chevron svg {
+.select-field__chevron svg {
   width: 100%;
   height: 100%;
 }
 
-.select-filed__helper {
+.select-field__helper {
   color: #52607a;
 }
 
-.select-filed__error {
+.select-field__error {
   display: inline-flex;
   align-items: flex-start;
   gap: 0.4rem;
   color: #b91c1c;
 }
 
-.select-filed__error-icon {
+.select-field__error-icon {
   display: inline-flex;
   width: 0.95rem;
   height: 0.95rem;
@@ -105,7 +105,7 @@
   margin-top: 0.1rem;
 }
 
-.select-filed__error-icon svg {
+.select-field__error-icon svg {
   width: 100%;
   height: 100%;
 }

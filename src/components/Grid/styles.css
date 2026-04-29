@@ -1,5 +1,6 @@
 .webable-grid {
   width: 100%;
+  min-width: 240px;
   margin-inline: auto;
   padding-inline: 1rem;
 }

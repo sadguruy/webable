@@ -17,6 +17,7 @@
 .text-field__label {
   display: inline-block;
   color: #14213d;
+  font-weight: 600;
 }
 
 .text-field__required {

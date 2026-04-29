@@ -49,11 +49,11 @@ export type {
   RadioGroupOption,
   RadioGroupProps
 } from "./components/RadioGroup";
-export { SelectFiled } from "./components/SelectFiled";
+export { SelectField } from "./components/SelectField";
 export type {
   SelectFiledOption,
   SelectFiledProps
-} from "./components/SelectFiled";
+} from "./components/SelectField";
 export { Spacing } from "./components/Spacing";
 export type {
   SpacingAs,
