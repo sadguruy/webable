@@ -15,6 +15,12 @@ export type {
   ActionListsProps,
   ActionListsVariant
 } from "./components/ActionLists";
+export { Checkbox, CheckboxGroup } from "./components/CheckboxGroup";
+export type {
+  CheckboxGroupProps,
+  CheckboxOption,
+  SingleCheckboxProps
+} from "./components/CheckboxGroup";
 export { Divider } from "./components/Divider";
 export type {
   DividerOrientation,
@@ -38,6 +44,11 @@ export { Icon } from "./components/Icon";
 export type { IconProps } from "./components/Icon";
 export { ImageUpload } from "./components/ImageUpload";
 export type { ImageUploadProps } from "./components/ImageUpload";
+export { RadioGroup } from "./components/RadioGroup";
+export type {
+  RadioGroupOption,
+  RadioGroupProps
+} from "./components/RadioGroup";
 export { SelectFiled } from "./components/SelectFiled";
 export type {
   SelectFiledOption,
@@ -57,6 +68,8 @@ export type {
   StatusAlertProps,
   StatusAlertTone
 } from "./components/StatusAlert";
+export { Table } from "./components/Table";
+export type { TableColumn, TableProps } from "./components/Table";
 export { TextareaBlock } from "./components/TextareaBlock";
 export type {
   TextareaBlockMode,

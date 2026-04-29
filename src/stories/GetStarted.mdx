@@ -27,19 +27,19 @@ Install the package in any React project where you want to reuse the
 components.
 
 ```bash
-npm install @webable/ui
+npm install webable-ui
 ```
 
 If you use Yarn:
 
 ```bash
-yarn add @webable/ui
+yarn add webable-ui
 ```
 
 If you use pnpm:
 
 ```bash
-pnpm add @webable/ui
+pnpm add webable-ui
 ```
 
 ## Peer requirements
@@ -54,46 +54,48 @@ than as a standalone app.
 
 ## Basic usage
 
+Import styles into your application before importing components otherwise css styles wont reflect.
+
+Use below in your main file src/index.js or src/main.js
+
+```tsx
+import "webable-ui/dist/webable-ui.css";
+```
+
 Import the component you want and use it in your React UI.
 
 ```tsx
-import { ActionButton } from "@webable/ui";
+import { ActionButton } from "webable-ui";
 
 export function Example() {
-  return (
-    <ActionButton
-      label="Save changes"
-      variant="primary"
-      size="medium"
-    />
-  );
+	return <ActionButton label="Save changes" variant="primary" size="medium" />;
 }
 ```
 
 ## Example with icon and full width
 
 ```tsx
-import { ActionButton } from "@webable/ui";
+import { ActionButton } from "webable-ui";
 
 function ArrowIcon() {
-  return (
-    <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeWidth="2">
-      <path d="M4 10h10" strokeLinecap="round" />
-      <path d="m10 5 5 5-5 5" strokeLinecap="round" strokeLinejoin="round" />
-    </svg>
-  );
+	return (
+		<svg viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeWidth="2">
+			<path d="M4 10h10" strokeLinecap="round" />
+			<path d="m10 5 5 5-5 5" strokeLinecap="round" strokeLinejoin="round" />
+		</svg>
+	);
 }
 
 export function SubmitSection() {
-  return (
-    <ActionButton
-      label="Continue"
-      variant="primary"
-      width="full"
-      icon={<ArrowIcon />}
-      iconPosition="right"
-    />
-  );
+	return (
+		<ActionButton
+			label="Continue"
+			variant="primary"
+			width="full"
+			icon={<ArrowIcon />}
+			iconPosition="right"
+		/>
+	);
 }
 ```
 
@@ -102,12 +104,27 @@ export function SubmitSection() {
 Current reusable component:
 
 - `ActionButton`
+- `ActionLists, ActionListsGroup`
+- `Checkbox, CheckboxGroup`
+- `Divider`
+- `Column, Grid`
+- `Header`
+- `Icon`
+- `ImageUpload`
+- `RadioGroup`
+- `SelectFiled`
+- `Spacing`
+- `StatusAlert`
+- `Table`
+- `TextareaBlock`
+- `TextField`
+- `TextStyle`
 
 Planned reusable components:
 
-- `Input`
 - `Tabs`
-- `Table`
+- `Accordion`
+- `MessageInline`
 - More shared primitives over time
 
 ## Development in this repository
