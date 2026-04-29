@@ -32,6 +32,12 @@ npm install webable-ui
 yarn add webable-ui
 ```
 
+Then import webable styles in your React app main.js/index.js:
+
+```
+import "webable-ui/dist/webable-ui.css";
+```
+
 Then import in your React app:
 
 ```tsx
@@ -39,15 +45,15 @@ import React from "react";
 import { ActionButton } from "webable-ui";
 
 export default function Example() {
-	return (
-		<div>
-			<ActionButton
-				variant="primary"
-				label="Click me"
-				onClick={() => alert("Clicked")}
-			/>
-		</div>
-	);
+ return (
+  <div>
+   <ActionButton
+    variant="primary"
+    label="Click me"
+    onClick={() => alert("Clicked")}
+   />
+  </div>
+ );
 }
 ```
 
@@ -66,19 +72,19 @@ cd webable
 npm install
 ```
 
-2. Start a development site (Vite) while you iterate on components:
+1. Start a development site (Vite) while you iterate on components:
 
 ```bash
 npm run dev
 ```
 
-3. Run Storybook to see components and examples:
+1. Run Storybook to see components and examples:
 
 ```bash
 npm run storybook
 ```
 
-4. Build the library for publishing:
+1. Build the library for publishing:
 
 ```bash
 npm run build
@@ -95,13 +101,13 @@ import React from "react";
 import { ActionButton } from "webable-ui";
 
 export default function Sample() {
-	return (
-		<>
-			<ActionButton label="Primary" variant="primary" />
-			<ActionButton elementType="link" href="/about" label="Go" />
-			<ActionButton icon={<svg />} iconPosition="right" label="With icon" />
-		</>
-	);
+ return (
+  <>
+   <ActionButton label="Primary" variant="primary" />
+   <ActionButton elementType="link" href="/about" label="Go" />
+   <ActionButton icon={<svg />} iconPosition="right" label="With icon" />
+  </>
+ );
 }
 ```
 
