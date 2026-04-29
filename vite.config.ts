@@ -36,6 +36,7 @@ export default defineConfig({
 				},
 			},
 		},
+		cssCodeSplit: true,
 	},
 	test: {
 		projects: [

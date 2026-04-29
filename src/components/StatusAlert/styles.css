@@ -101,9 +101,10 @@
 }
 
 .status-alert__title {
-  font-size: 0.95rem;
+  font-size: 1rem;
   font-weight: 700;
   line-height: 1.35;
+  margin-bottom: 0.5rem;
 }
 
 .status-alert__message {

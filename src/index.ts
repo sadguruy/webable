@@ -1,3 +1,4 @@
+import "./index.css";
 export { ActionButton } from "./components/ActionButton";
 export type {
   ActionButtonProps,

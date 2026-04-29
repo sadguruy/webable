@@ -75,7 +75,7 @@ export const WithSpriteIcon: Story = {
 export const AsLink: Story = {
   args: {
     elementType: "link",
-    href: "https://example.com",
+    href: "",
     target: "_blank",
     title: "Billing portal",
     helperText: "View invoices, subscriptions, and payment methods.",

@@ -3,7 +3,7 @@
   flex-direction: column;
   gap: 0.75rem;
   width: 100%;
-  font-size: .85rem;
+  font-size: 1rem;
 }
 
 .webable-table__toolbar {
@@ -18,7 +18,6 @@
 .webable-table__page-size-select {
   padding: 0.35rem 0.6rem;
   border-radius: 0.5rem;
-  font-size: 1rem;
   border: 1px solid #dbe7ee;
   font: inherit;
   background-color: transparent;
@@ -91,19 +90,19 @@
   gap: 0.5rem;
   align-items: center;
   justify-content: space-between;
-  font-size: 0.7rem;
+  font-size: 0.85rem;
   color: #111;
 }
 
 .webable-table__page-button {
   margin-left: 0.2rem;
-  padding: 0.3rem 0.6rem;
+  padding: 0.2rem 0.6rem;
   border-radius: 999px;
   border: 1px solid #cbd5e1;
   background: #ffffff;
   font: inherit;
   color:#111;
-  font-size: 0.7rem;
+  font-size: 0.85rem;
   cursor: pointer;
 }
 
@@ -122,10 +121,10 @@
   }
 
   .webable-table__header-button span {
-    font-size: 0.7rem;
+    font-size: 0.85rem;
   }
 
   .webable-table__cell {
-    font-size: 0.7rem;
+    font-size: 0.85rem;
   }
 }

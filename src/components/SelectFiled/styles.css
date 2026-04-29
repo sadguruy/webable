@@ -11,6 +11,7 @@
 .select-filed__header {
   display: grid;
   gap: 0.2rem;
+  margin-bottom: 0.5rem;
 }
 
 .select-filed__label {

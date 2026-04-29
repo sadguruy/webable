@@ -1,0 +1,43 @@
+@font-face {
+	font-family: 'webable-ui';
+	font-weight: 600;
+	font-style: normal;
+	src: url('./Webable-Bold.eot');
+	src: url('./Webable-Bold.eot?#iefix') format('embedded-opentype'),
+		url('./Webable-Bold.woff') format('woff'),
+		url('./Webable-Bold.ttf') format('truetype'),
+		url('./Webable-Bold.svg#webfont') format('svg');
+}
+
+@font-face {
+	font-family: 'webable-ui';
+	font-weight: 500;
+	font-style: normal;
+	src: url('./Webable-Semibold.eot');
+	src: url('./Webable-Semibold.eot?#iefix') format('embedded-opentype'),
+		url('./Webable-Semibold.woff') format('woff'),
+		url('./Webable-Semibold.ttf') format('truetype'),
+		url('./Webable-Semibold.svg#webfont') format('svg');
+}
+
+@font-face {
+	font-family: 'webable-ui';
+	font-weight: 400;
+	font-style: normal;
+	src: url('./Webable-Regular.eot');
+	src: url('./Webable-Regular.eot?#iefix') format('embedded-opentype'),
+		url('./Webable-Regular.woff') format('woff'),
+		url('./Webable-Regular.ttf') format('truetype'),
+		url('./Webable-Regular.svg#webfont') format('svg');
+}
+
+@font-face {
+	font-family: 'webable-ui';
+	font-weight: 300;
+	font-style: normal;
+	src: url('./Webable-Thin.eot');
+	src: url('./Webable-Thin.eot?#iefix') format('embedded-opentype'),
+		url('./Webable-Thin.woff') format('woff'),
+		url('./Webable-Thin.ttf') format('truetype'),
+		url('./Webable-Thin.svg#webfont') format('svg');
+}

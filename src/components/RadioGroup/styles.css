@@ -33,6 +33,7 @@
 .radio-group__long-desc {
   color: #14213d;
   line-height: 1.5;
+  margin-bottom: 0.5rem;
 }
 
 .radio-group__options {
@@ -116,12 +117,12 @@
 }
 
 .radio-group--comfortable .radio-group__option-label {
-  font-size: 0.98rem;
+  font-size: 1rem;
   font-weight: 500;
 }
 
 .radio-group--comfortable .radio-group__option-desc {
-  font-size: 0.83rem;
+  font-size: 0.875rem;
   color: #64748b;
 }
 

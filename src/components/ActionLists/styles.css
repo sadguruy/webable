@@ -112,15 +112,16 @@
 }
 
 .action-lists__title {
-  font-size: 0.98rem;
-  font-weight: 650;
+  font-size: 1.25rem;
+  font-weight: 600;
   line-height: 1.35;
 }
 
 .action-lists__helper {
   color: #52607a;
-  font-size: 0.86rem;
+  font-size: 1rem;
   line-height: 1.4;
+  font-weight: 400;
 }
 
 .action-lists__right {

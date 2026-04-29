@@ -11,6 +11,7 @@
 .textarea-block__header {
   display: grid;
   gap: 0.2rem;
+  margin-bottom: .5rem;
 }
 
 .textarea-block__label {

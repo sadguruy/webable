@@ -35,6 +35,7 @@
 .checkbox-group__long-desc {
   color: #14213d;
   line-height: 1.5;
+  margin-bottom: 0.5rem;
 }
 
 .checkbox-group__options {
@@ -113,12 +114,12 @@
 }
 
 .checkbox-group--comfortable .checkbox-group__option-label {
-  font-size: 0.98rem;
-  font-weight: 500;
+  font-size: 1rem;
+  font-weight: 600;
 }
 
 .checkbox-group--comfortable .checkbox-group__option-desc {
-  font-size: 0.83rem;
+  font-size: 0.875rem;
   color: #64748b;
 }
 
@@ -149,11 +150,11 @@
 }
 
 .checkbox-group--compact .checkbox-group__option-label {
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 
 .checkbox-group--compact .checkbox-group__option-desc {
-  font-size: 0.75rem;
+  font-size: 0.875rem;
 }
 
 /* Shared option body */
