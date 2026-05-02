@@ -1,0 +1,51 @@
+.login-model {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 100%;
+  max-width: 28rem;
+  padding: 2rem;
+  background: var(--awb-color-surface, #ffffff);
+  border-radius: 1rem;
+  box-shadow: var(--awb-shadow-sm, 0 1px 2px rgba(16, 24, 40, 0.08));
+}
+
+.login-model__header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  text-align: center;
+}
+
+.login-model__title {
+  margin: 0;
+}
+
+.login-model__description {
+  margin: 0;
+}
+
+.login-model__form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.login-model__form .text-field {
+  margin-bottom: 0;
+}
+
+.login-model__form .action-button {
+  margin-top: 0.5rem;
+}
+
+@media (max-width: 480px) {
+  .login-model {
+    padding: 1.5rem;
+    max-width: 100%;
+  }
+
+  .login-model__form {
+    gap: 1rem;
+  }
+}
