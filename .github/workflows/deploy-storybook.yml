@@ -2,7 +2,7 @@ name: Deploy Storybook to GitHub Pages
 
 on:
   push:
-    branches: ["feature/dev"] # or "master" or your default branch
+    branches: ["main"] # or "master" or your default branch
   workflow_dispatch:
 
 permissions:
