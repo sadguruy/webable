@@ -1,0 +1,318 @@
+.radio-group {
+  display: grid;
+  gap: 0.6rem;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.radio-group--full {
+  width: 100%;
+}
+
+.radio-group__header {
+  display: grid;
+  gap: 0.2rem;
+}
+
+.radio-group__title {
+  display: inline-block;
+  color: #14213d;
+  padding: 0;
+  font-family: var(--sans);
+  font-weight: 600;
+}
+
+.radio-group__required {
+  color: #b91c1c;
+}
+
+.radio-group__helper {
+  color: #52607a;
+}
+
+.radio-group__long-desc {
+  color: #14213d;
+  line-height: 1.5;
+  margin-bottom: 0.5rem;
+}
+
+.radio-group__options {
+  display: grid;
+}
+
+/* ------------------------------
+   Comfortable (boxed card style)
+   ------------------------------ */
+
+.radio-group--comfortable .radio-group__options {
+  gap: 0.75rem;
+}
+
+.radio-group--comfortable .radio-group__option {
+  position: relative;
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 0.85rem;
+  padding: 0.75rem 0.9rem;
+  border-radius: 0.75rem;
+  border: 1px solid #e2e8f0;
+  background-color: #ffffff;
+  box-shadow: 0 1px 0 rgba(15, 23, 42, 0.02);
+  cursor: pointer;
+  transition:
+    background-color 140ms ease,
+    border-color 140ms ease,
+    box-shadow 140ms ease,
+    transform 80ms ease;
+}
+
+/* Accent bar for selected card */
+.radio-group--comfortable .radio-group__option::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.4rem;
+  bottom: 0.4rem;
+  width: 0.14rem;
+  border-radius: 999px;
+  background: transparent;
+  transition: background-color 140ms ease;
+}
+
+/* Hover state */
+.radio-group--comfortable
+  .radio-group__option:hover:not([aria-disabled="true"]) {
+  background-color: #f8fafc;
+  border-color: #cbd5e1;
+  box-shadow: 0 2px 6px rgba(15, 23, 42, 0.06);
+}
+
+/* Active/press */
+.radio-group--comfortable
+  .radio-group__option:active:not([aria-disabled="true"]) {
+  transform: translateY(1px);
+}
+
+/* Checked card styles (using :has where supported) */
+.radio-group--comfortable .radio-group__option:has(
+    .radio-group__input:checked
+  ) {
+  border-color: #0f766e;
+  box-shadow:
+    0 0 0 1px rgba(15, 118, 110, 0.25),
+    0 4px 10px rgba(15, 23, 42, 0.08);
+  background-color: #f0fdfa;
+}
+
+.radio-group--comfortable .radio-group__option:has(
+    .radio-group__input:checked
+  )::before {
+  background: #0f766e;
+}
+
+/* Control size and text in comfortable variant */
+.radio-group--comfortable .radio-group__control {
+  width: 1.2rem;
+  height: 1.2rem;
+}
+
+.radio-group--comfortable .radio-group__option-label {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.radio-group--comfortable .radio-group__option-desc {
+  font-size: 0.875rem;
+  color: #64748b;
+}
+
+/* ------------------------------
+   Compact variant
+   ------------------------------ */
+
+.radio-group--compact .radio-group__options {
+  gap: 0.25rem;
+}
+
+.radio-group--compact .radio-group__option {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  padding: 0.35rem 0.3rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 120ms ease;
+}
+
+.radio-group--compact
+  .radio-group__option:hover:not([aria-disabled="true"]) {
+  background-color: #f8fafc;
+}
+
+.radio-group--compact .radio-group__control {
+  width: 1rem;
+  height: 1rem;
+}
+
+.radio-group--compact .radio-group__option-label {
+  font-size: 0.9rem;
+}
+
+.radio-group--compact .radio-group__option-desc {
+  font-size: 0.75rem;
+}
+
+/* ------------------------------
+   Shared option body/typography
+   ------------------------------ */
+
+.radio-group__option-body {
+  display: grid;
+  gap: 0.15rem;
+}
+
+.radio-group__option-label {
+  color: #14213d;
+  line-height: 1.35;
+}
+
+.radio-group__option-desc {
+  color: #52607a;
+  line-height: 1.4;
+}
+
+/* ------------------------------
+   Hidden native input
+   ------------------------------ */
+
+.radio-group__input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* ------------------------------
+   Custom radio control
+   ------------------------------ */
+
+.radio-group__control {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-top: 0.15rem;
+  border: 1.5px solid #cbd5e1;
+  border-radius: 50%;
+  background: #ffffff;
+  transition:
+    border-color 160ms ease,
+    box-shadow 160ms ease,
+    background-color 160ms ease;
+}
+
+.radio-group__input:focus-visible + .radio-group__control {
+  outline: none;
+  border-color: #0f766e;
+  box-shadow: 0 0 0 4px rgba(15, 118, 110, 0.18);
+}
+
+.radio-group__input:checked + .radio-group__control {
+  border-color: #0f766e;
+}
+
+.radio-group__input:checked + .radio-group__control::after {
+  content: "";
+  display: block;
+  width: 55%;
+  height: 55%;
+  border-radius: 50%;
+  background: #0f766e;
+}
+
+/* ------------------------------
+   Invalid state
+   ------------------------------ */
+
+/* .radio-group--invalid .radio-group__control {
+  border-color: #dc2626;
+  background: #fff8f8;
+}
+
+.radio-group--invalid
+  .radio-group__input:focus-visible
+  + .radio-group__control {
+  border-color: #dc2626;
+  box-shadow: 0 0 0 4px rgba(220, 38, 38, 0.16);
+}
+
+.radio-group--invalid .radio-group__input:checked + .radio-group__control {
+  border-color: #dc2626;
+}
+
+.radio-group--invalid
+  .radio-group__input:checked
+  + .radio-group__control::after {
+  background: #dc2626;
+} */
+
+/* Invalid + card border */
+/* .radio-group--invalid .radio-group__option {
+  border-color: #dc2626;
+  background: #fff8f8;
+}
+
+.radio-group--invalid
+  .radio-group__option:has(.radio-group__input:checked) {
+  box-shadow:
+    0 0 0 1px rgba(220, 38, 38, 0.4),
+    0 4px 10px rgba(15, 23, 42, 0.1);
+} */
+
+/* ------------------------------
+   Disabled state
+   ------------------------------ */
+
+.radio-group--disabled .radio-group__option {
+  cursor: not-allowed;
+  opacity: 0.65;
+}
+
+.radio-group--disabled .radio-group__option:hover {
+  background-color: transparent;
+}
+
+.radio-group--disabled .radio-group__control {
+  background: #f8fafc;
+}
+
+/* ------------------------------
+   Error message
+   ------------------------------ */
+
+.radio-group__error {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 0.4rem;
+  color: #b91c1c;
+}
+
+.radio-group__error-icon {
+  display: inline-flex;
+  width: 0.95rem;
+  height: 0.95rem;
+  flex-shrink: 0;
+  margin-top: 0.1rem;
+}
+
+.radio-group__error-icon svg {
+  width: 100%;
+  height: 100%;
+}

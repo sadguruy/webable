@@ -1,0 +1,162 @@
+import { Meta } from "@storybook/addon-docs/blocks";
+
+<Meta title="Welcome/About" />
+
+# Webable
+
+<div
+	style={{
+		padding: "18px 20px",
+		borderRadius: "16px",
+		background: "linear-gradient(135deg, #f0fdfa 0%, #eff6ff 100%)",
+		border: "1px solid #cfe8e4",
+		marginBottom: "20px",
+	}}
+>
+	<img
+		src="/webable-logo.png"
+		alt="Webable logo"
+		style={{ width: "180px", maxWidth: "100%", marginBottom: "14px" }}
+	/>
+	<strong>
+		Lightweight React UI components for reusable product interfaces.
+	</strong>
+	<div style={{ marginTop: "8px" }}>
+		Built for teams that want shared building blocks without dragging a heavy
+		design system into every app.
+	</div>
+</div>
+
+## Why this library exists
+
+Applications repeat the same core UI patterns again and again: buttons,
+inputs, tabs, tables, alerts, and form controls. Webable is meant to keep
+those pieces consistent, accessible, and easy to share across React-based
+projects.
+
+## What you can expect
+
+<div
+	style={{
+		display: "grid",
+		gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))",
+		gap: "12px",
+		margin: "16px 0 20px",
+	}}
+>
+	<div
+		style={{
+			padding: "14px",
+			borderRadius: "14px",
+			border: "1px solid #dbe7ee",
+			background: "#ffffff",
+		}}
+	>
+		<div
+			style={{
+				fontSize: "14px",
+				fontWeight: 700,
+				color: "#0f766e",
+				marginBottom: "6px",
+			}}
+		>
+			API
+		</div>
+		<strong>Reusable APIs</strong>
+		<p>Small, predictable props that are easy to compose across projects.</p>
+	</div>
+	<div
+		style={{
+			padding: "14px",
+			borderRadius: "14px",
+			border: "1px solid #dbe7ee",
+			background: "#ffffff",
+		}}
+	>
+		<div
+			style={{
+				fontSize: "14px",
+				fontWeight: 700,
+				color: "#0f766e",
+				marginBottom: "6px",
+			}}
+		>
+			UI
+		</div>
+		<strong>Clean defaults</strong>
+		<p>Reliable spacing, states, and interactions without heavy setup.</p>
+	</div>
+	<div
+		style={{
+			padding: "14px",
+			borderRadius: "14px",
+			border: "1px solid #dbe7ee",
+			background: "#ffffff",
+		}}
+	>
+		<div
+			style={{
+				fontSize: "14px",
+				fontWeight: 700,
+				color: "#0f766e",
+				marginBottom: "6px",
+			}}
+		>
+			DOCS
+		</div>
+		<strong>Storybook-first docs</strong>
+		<p>Components stay visible, testable, and easier to review as they grow.</p>
+	</div>
+	<div
+		style={{
+			padding: "14px",
+			borderRadius: "14px",
+			border: "1px solid #dbe7ee",
+			background: "#ffffff",
+		}}
+	>
+		<div
+			style={{
+				fontSize: "14px",
+				fontWeight: 700,
+				color: "#0f766e",
+				marginBottom: "6px",
+			}}
+		>
+			TS
+		</div>
+		<strong>TypeScript friendly</strong>
+		<p>Typed contracts help teams consume components with less guesswork.</p>
+	</div>
+</div>
+
+## Component direction
+
+The library is intended to cover common UI patterns such as:
+
+- `Button` components for primary, secondary, warning, error, and destructive actions
+- `Input` components for text entry, validation states, and form workflows
+- `Tabs` for grouped content and compact navigation
+- Data display components such as tables, badges, and status indicators
+- Layout helpers and utility building blocks for consistent composition
+
+## Current focus
+
+The current component set starts with **ActionButton**, which establishes the
+pattern for:
+
+- Variant-driven styling
+- Reusable sizing and width options
+- Optional icon support
+- Strong defaults that still stay flexible
+
+## How to use Storybook here
+
+1. Review component variants and interaction states
+2. Test API options before using components in product code
+3. Document new components as the library grows
+
+## Goal
+
+Webable aims to stay lightweight in bundle impact and easy to adopt, while
+still giving teams a reliable shared UI layer for React applications.

@@ -1,0 +1,27 @@
+.webable-divider {
+  flex-shrink: 0;
+  --webable-divider-thickness: 1px;
+  --webable-divider-length: 100%;
+}
+
+.webable-divider--horizontal {
+  width: var(--webable-divider-length);
+  height: var(--webable-divider-thickness);
+}
+
+.webable-divider--vertical {
+  width: var(--webable-divider-thickness);
+  height: var(--webable-divider-length);
+}
+
+.webable-divider--subtle {
+  background: #edf2f7;
+}
+
+.webable-divider--default {
+  background: #dbe7ee;
+}
+
+.webable-divider--strong {
+  background: #94a3b8;
+}

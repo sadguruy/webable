@@ -1,0 +1,90 @@
+/* Root wrapper for the icon element */
+.webable-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  /* Let the consumer control size via width/height or font-size;
+     we just make it align nicely. */
+  vertical-align: middle;
+  color: #14213d; /* inherits fine; can be overridden */
+}
+
+/* SVG element inside the icon */
+.webable-icon__svg {
+  display: block;
+  width: 1em;
+  height: 1em;
+  /* Make sure it scales with font-size when size is not explicitly set */
+}
+
+/* Common utility modifiers */
+.webable-icon--sm .webable-icon__svg {
+  width: 0.875rem;
+  height: 0.875rem;
+}
+
+.webable-icon--md .webable-icon__svg {
+  width: 1.1rem;
+  height: 1.1rem;
+}
+
+.webable-icon--lg .webable-icon__svg {
+  width: 1.35rem;
+  height: 1.35rem;
+}
+
+/* Variant examples; you can extend these as needed */
+.webable-icon--muted {
+  color: #64748b;
+}
+
+.webable-icon--primary {
+  color: #0f766e;
+}
+
+.webable-icon--danger {
+  color: #b91c1c;
+}
+.webable-icon--success {
+  color: #007b02;
+}
+
+/* For icons used inside interactive controls (buttons, links) */
+.webable-icon--button {
+  /* Slight optical alignment tweak for icon-only buttons if needed */
+  padding: 0;
+}
+
+/* Optional: icon with background chip */
+.webable-icon--chip {
+  border-radius: 999px;
+  background: #f1f5f9;
+  padding: 0.35rem;
+}
+
+.webable-icon--chip .webable-icon__svg {
+  width: 1rem;
+  height: 1rem;
+}
+
+/* Responsive tweak: slightly larger icons on small screens if used standalone */
+@media (max-width: 720px) {
+  .webable-icon--responsive-lg .webable-icon__svg {
+    width: 1.4rem;
+    height: 1.4rem;
+  }
+}
+.webable-icon--primary {
+  /* color: #2563eb; blue for attention */
+}
+
+.webable-icon--danger {
+  color: #dc2626; /* red for critical */
+}
+.webable-icon--attention-blue {
+  /* color: #2563eb; blue-600 */
+}
+
+.webable-icon--attention-red {
+  color: #dc2626; /* red-600 */
+}
