@@ -44,6 +44,8 @@ export { Icon } from "./components/Icon";
 export type { IconProps } from "./components/Icon";
 export { ImageUpload } from "./components/ImageUpload";
 export type { ImageUploadProps } from "./components/ImageUpload";
+export { LoginModel } from "./components/LoginModel";
+export type { LoginModelProps } from "./components/LoginModel";
 export { RadioGroup } from "./components/RadioGroup";
 export type {
   RadioGroupOption,
