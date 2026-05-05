@@ -1,0 +1,82 @@
+:root {
+  --tab-accent: #2563eb;
+  --tab-border: #e5e7eb;
+  --tab-duration: 300ms;
+}
+
+/* Root */
+.tabs-header {
+  position: relative;
+  display: flex;
+  gap: 8px;
+  border-bottom: 2px solid var(--tab-border);
+}
+
+/* Trigger */
+.tab-btn {
+  background: none;
+  border: none;
+  padding: 8px 14px;
+  cursor: pointer;
+}
+
+.tab-btn.active {
+  color: var(--tab-accent);
+  font-weight: 600;
+}
+
+.tab-btn:focus-visible {
+  outline: 2px solid var(--tab-accent);
+}
+
+/* Disabled */
+.tab-btn[disabled] {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+/* Indicator */
+.tabs-indicator {
+  position: absolute;
+  bottom: 0;
+  height: 2px;
+  background: var(--tab-accent);
+  transition: transform var(--tab-duration) ease,
+              width var(--tab-duration) ease;
+}
+
+/* Panel */
+.tabs-panel-wrapper {
+  overflow: hidden;
+}
+
+.tabs-panel {
+  animation-duration: var(--tab-duration);
+  animation-fill-mode: both;
+}
+
+.slide-forward {
+  animation-name: slideForward;
+}
+
+.slide-backward {
+  animation-name: slideBackward;
+}
+
+@keyframes slideForward {
+  from { transform: translateX(24px); opacity: 0 }
+  to { transform: translateX(0); opacity: 1 }
+}
+
+@keyframes slideBackward {
+  from { transform: translateX(-24px); opacity: 0 }
+  to { transform: translateX(0); opacity: 1 }
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+}
