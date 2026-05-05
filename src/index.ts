@@ -6,6 +6,13 @@ export type {
   ActionButtonVariant,
   ActionButtonWidth
 } from "./components/ActionButton";
+export { Accordian, AccordianItem, AccordianPanel, AccordianTitle } from "./components/Accordian";
+export type {
+  AccordianItemProps,
+  AccordianPanelProps,
+  AccordianProps,
+  AccordianTitleProps
+} from "./components/Accordian";
 export { ActionLists, ActionListsGroup } from "./components/ActionLists";
 export type {
   ActionListsButtonProps,
@@ -27,6 +34,22 @@ export type {
   DividerProps,
   DividerTone
 } from "./components/Divider";
+export { Datepicker } from "./components/Datepicker";
+export type { DatepickerMode, DatepickerProps } from "./components/Datepicker";
+export {
+  Drawer,
+  DrawerBody,
+  DrawerCloseButton,
+  DrawerFooter,
+  DrawerTitle
+} from "./components/Drawer";
+export type {
+  DrawerBodyProps,
+  DrawerFooterProps,
+  DrawerPlacement,
+  DrawerProps,
+  DrawerTitleProps
+} from "./components/Drawer";
 export { Column, Grid } from "./components/Grid";
 export type {
   ColumnProps,
@@ -46,6 +69,24 @@ export { ImageUpload } from "./components/ImageUpload";
 export type { ImageUploadProps } from "./components/ImageUpload";
 export { LoginModel } from "./components/LoginModel";
 export type { LoginModelProps } from "./components/LoginModel";
+export {
+  ModelDialog,
+  ModelDialogBody,
+  ModelDialogCloseButton,
+  ModelDialogFooter,
+  ModelDialogHeader,
+  ModelDialogPrimaryButton,
+  ModelDialogTitle
+} from "./components/ModelDialog";
+export type {
+  ModelDialogBodyProps,
+  ModelDialogFooterProps,
+  ModelDialogHeaderProps,
+  ModelDialogProps,
+  ModelDialogSize,
+  ModelDialogTitleProps,
+  ModelDialogVariant
+} from "./components/ModelDialog";
 export { RadioGroup } from "./components/RadioGroup";
 export type {
   RadioGroupOption,
@@ -56,6 +97,12 @@ export type {
   SelectFiledOption,
   SelectFiledProps
 } from "./components/SelectField";
+export { Segmented, TabPanel, TabTitle } from "./components/Segmented";
+export type {
+  SegmentedProps,
+  TabPanelProps,
+  TabTitleProps
+} from "./components/Segmented";
 export { Spacing } from "./components/Spacing";
 export type {
   SpacingAs,
@@ -81,4 +128,3 @@ export { TextField } from "./components/TextField";
 export type { TextFieldProps } from "./components/TextField";
 export { TextStyle } from "./components/TextStyle";
 export type { TextStyleProps, TextStyleVariant } from "./components/TextStyle";
-
