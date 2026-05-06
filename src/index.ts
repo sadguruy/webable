@@ -28,6 +28,27 @@ export type {
   CheckboxOption,
   SingleCheckboxProps
 } from "./components/CheckboxGroup";
+export {
+  Carousel,
+  CarouselBody,
+  CarouselDots,
+  CarouselEvents,
+  CarouselImg,
+  CarouselItem,
+  CarouselNav,
+  CarouselTitle
+} from "./components/Carousel";
+export type {
+  CarouselBodyProps,
+  CarouselDotsProps,
+  CarouselEventsProps,
+  CarouselImgProps,
+  CarouselItemProps,
+  CarouselNavProps,
+  CarouselProps,
+  CarouselTitleProps,
+  ItemsPerView
+} from "./components/Carousel";
 export { Divider } from "./components/Divider";
 export type {
   DividerOrientation,
@@ -63,6 +84,25 @@ export type {
   HeaderNavItem,
   HeaderProps
 } from "./components/Header";
+export {
+  HeroSlider,
+  HeroSlide,
+  SliderBody,
+  SliderEvents,
+  SliderSubTitle,
+  SliderTitle
+} from "./components/HeroSlider";
+export type {
+  HeroSlideProps,
+  HeroSliderAction,
+  HeroSliderContentPosition,
+  HeroSliderProps,
+  HeroSliderSlide,
+  SliderBodyProps,
+  SliderEventsProps,
+  SliderSubTitleProps,
+  SliderTitleProps
+} from "./components/HeroSlider";
 export { Icon } from "./components/Icon";
 export type { IconProps } from "./components/Icon";
 export { ImageUpload } from "./components/ImageUpload";
