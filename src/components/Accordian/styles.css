@@ -1,0 +1,77 @@
+.accordian {
+  width: 100%;
+  border: 1px solid #dbe7ee;
+  border-radius: 1rem;
+  background: #ffffff;
+  overflow: hidden;
+}
+
+.accordian__item + .accordian__item {
+  border-top: 1px solid #edf2f7;
+}
+
+.accordian__item--disabled {
+  opacity: 0.65;
+}
+
+.accordian__title {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 1.1rem;
+  border: 0;
+  background: #ffffff;
+  color: #14213d;
+  text-align: left;
+  cursor: pointer;
+  font: inherit;
+  transition: background-color 160ms ease;
+}
+
+.accordian__title:hover:not(:disabled) {
+  background: #f8fafc;
+}
+
+.accordian__title:focus-visible {
+  outline: none;
+  box-shadow: inset 0 0 0 2px rgba(15, 118, 110, 0.22);
+}
+
+.accordian__title:disabled {
+  cursor: not-allowed;
+}
+
+.accordian__title-text {
+  font-size: 0.97rem;
+  font-weight: 650;
+  line-height: 1.4;
+}
+
+.accordian__title-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.2rem;
+  height: 1.2rem;
+  flex-shrink: 0;
+  color: #52607a;
+  font-weight: 700;
+}
+
+.accordian__title-icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.accordian__panel {
+  background: #fcfdff;
+}
+
+.accordian__panel-inner {
+  padding: 0 1.1rem 1rem;
+  color: #334155;
+  font-size: 0.92rem;
+  line-height: 1.55;
+}
